@@ -18,11 +18,37 @@ body{font-family: helvetica, Arial, sans-serif;}
 
 .logo
 {
-	width:100px;
-	margin-left: auto;
-	margin-right: auto;
+	width:50%;
+	display:inline-block
+	
 }
 
+
+#burgerCon
+{
+	
+	margin-bottom: 20px;
+	position:fixed;
+	top:60px;
+	width:100%;
+	background-color:#600606;
+	display:none;
+}
+.show-mobile-nav{display:block !important; }
+#burgerCon li 
+
+{
+	padding: 20px; 
+	border-top:thin solid #666;
+	text-align:center;
+}
+
+#burgerCon a
+{
+	text-decoration: none;
+	color:#8ea86e;
+
+}
 @media screen and (min-width: 600px){
 	#mainHeader{
 		display:flex;
@@ -46,4 +72,27 @@ body{font-family: helvetica, Arial, sans-serif;}
 		display:flex;
 		flex-direction: row;
 	}
+}
+@media screen and (min-width: 375px){
+	#mainHeader
+	{
+		display:flex;
+		flex-direction: row
+	}
+
+	.logo
+	{
+		width:25%;
+		order: -1;
+		margin-left: 10px;
+		margin-right:auto;
+	}
+	.nav
+	{
+		min-width:25%;
+		float:right;
+	}
+	
+
+
 }
